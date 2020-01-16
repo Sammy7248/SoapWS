@@ -7,74 +7,35 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#fff"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Asignar Timbres"
-        android:textSize="25dp"
-        android:textColor="@color/colorAccent"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:textStyle="bold"
-        android:gravity="center"
-        />
+        android:layout_height="120dp">
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/itsp"
+            android:layout_marginTop="10dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+        </ImageView>
+    </LinearLayout>
 
-    <EditText
-        android:hint="Username"
-        android:inputType="text"
-        android:textColor="@color/colorAccent"
-        android:id="@+id/username"
-        android:textColorHint="@color/colorPrimary"
-        android:layout_margin="5dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-    </EditText>
-
-
-    <EditText
-        android:hint="Password"
-        android:inputType="textPassword"
-        android:id="@+id/password"
-        android:textColorHint="@color/colorPrimary"
-        android:layout_margin="5dp"
-        android:textColor="@color/colorAccent"
+    <com.google.android.material.tabs.TabLayout
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        android:id="@+id/tab_main"
+        app:tabTextColor="#fff"
+        app:tabIndicatorColor="#fff"
+        android:background="@color/colorPrimary"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-    </EditText>
+    </com.google.android.material.tabs.TabLayout>
 
-    <EditText
-        android:hint="RFC"
-        android:id="@+id/taxpayerId"
-        android:inputType="text"
-        android:textColor="@color/colorAccent"
-        android:layout_margin="5dp"
-        android:textColorHint="@color/colorPrimary"
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPagerMain"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    </EditText>
+        android:layout_height="match_parent">
+    </androidx.viewpager.widget.ViewPager>
 
-    <EditText
-        android:hint="Creditos"
-        android:id="@+id/creditos"
-        android:textColor="@color/colorAccent"
-        android:textColorHint="@color/colorPrimary"
-        android:inputType="number"
-        android:layout_margin="5dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-    </EditText>
-
-    <Button
-        android:background="@drawable/btndesign"
-        android:textColor="#FFF"
-        android:text="Asignar"
-        android:id="@+id/enviar"
-        android:layout_margin="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-    </Button>
 </LinearLayout>

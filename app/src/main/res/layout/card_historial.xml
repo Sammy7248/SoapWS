@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Hora"
+            android:layout_weight=".5"
+            android:gravity="center"
+            android:id="@+id/date"
+            android:textSize="15dp"
+            android:background="@color/back_main"
+            android:textColor="@color/selected"
+            android:textStyle="bold"
+            android:layout_width="195dip"
+            android:layout_height="wrap_content">
+        </TextView>
+        <TextView
+            android:text="Cantidad"
+            android:gravity="center"
+            android:layout_weight=".5"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="@color/selected"
+            android:id="@+id/timbres"
+            android:layout_width="195dip"
+            android:layout_height="wrap_content">
+        </TextView>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
